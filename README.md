@@ -1,6 +1,6 @@
 # CSE-Sem3-Repository
 
-Academic Repository for 3rd Semester of Computer Science & Engineering - B24 (Aug - Dec '25)
+Academic Repository for my 3rd Semester of Computer Science & Engineering - B24 (Aug - Dec '25)
 
 ---
 
@@ -15,4 +15,4 @@ Academic Repository for 3rd Semester of Computer Science & Engineering - B24 (Au
 
 ---
 
-This repository contains course materials, assignments, notes, and resources for the listed subjects as part of the third semester curriculum.
+This repository contains course materials, assignments, notes, and resources for the listed subjects as part of my third semester curriculum.
