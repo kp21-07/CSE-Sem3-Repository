@@ -1,0 +1,128 @@
+1. Replace first occurrence
+   sed 's/old/new/' file
+
+2. Replace all occurrences
+   sed 's/old/new/g' file
+
+3. Case-insensitive replace
+   sed 's/old/new/i' file
+
+4. Replace only on matching lines
+   sed '/pattern/s/old/new/' file
+
+5. Replace on a specific line
+   sed '5s/foo/bar/' file
+
+6. Replace character at fixed position
+   sed 's/./X/4' file
+
+7. Replace between line range
+   sed '3,7s/foo/bar/' file
+
+8. Replace between two patterns
+   sed '/START/,/END/s/foo/bar/' file
+
+9. Print specific lines
+   sed -n '1p' file
+   sed -n '1,5p' file
+
+10. Delete specific lines
+    sed '2d' file
+    sed '1,3d' file
+    sed '/pattern/d' file
+
+11. Print lines between two patterns
+    sed -n '/BEGIN/,/STOP/p'
+
+12. Delete all blank lines
+    sed '/^$/d'
+
+13. Delete lines starting with #
+    sed '/^#/d'
+
+14. Remove trailing spaces
+    sed 's/[ \t]*$//'
+
+15. Insert line before a line
+    sed '3i\text to insert' file
+
+16. Append line after a line
+    sed '3a\text after' file
+
+17. Insert after lines matching pattern
+    sed '/error/a\check this'
+
+18. Replace entire line
+    sed '5c\this is new line'
+
+19. Replace entire line if pattern matches
+    sed '/foo/c\pattern replaced'
+
+20. Transform characters (like tr)
+    sed 'y/abc/xyz/' file
+
+21. Capture group: swap two words
+    sed 's/([A-Za-z]*) ([A-Za-z]*)/\2 \1/'
+
+22. Add brackets around digits
+    sed 's/([0-9]+)/[\1]/g'
+
+23. Multiple commands using -e
+    sed -e 's/foo/bar/' -e 's/x/y/' file
+
+24. Multiple commands using block
+    sed '/start/{ s/foo/bar/ ; s/x/y/ }'
+
+25. Write lines to another file
+    sed -n '1,5w new.txt' file
+
+26. Read contents from another file
+    sed '/HERE/r other.txt' file
+
+27. Print last line
+    sed -n '$p'
+
+28. Remove first character of each line
+    sed 's/^.//'
+
+29. Remove last character of each line
+    sed 's/.$//'
+
+30. Substitute only nth occurrence
+    sed 's/foo/bar/2'
+
+31. Replace only if pattern not present
+    sed '/pattern/!s/foo/bar/'
+
+32. Duplicate every line
+    sed 'p' file
+
+33. Number lines
+    sed = file | sed 'N;s/\n/ /'
+
+34. Prefix each line with ">> "
+    sed 's/^/>> /'
+
+35. Suffix each line with " <<"'
+    sed 's/$/ <</'
+
+36. Match OR using extended regex
+    sed -E 's/foo|bar/X/g'
+
+37. Remove everything before a pattern
+    sed 's/^.*pattern/pattern/'
+
+38. Remove everything after a pattern
+    sed 's/pattern.*/pattern/'
+
+39. Keep only digits
+    sed 's/[^0-9]//g'
+
+40. Convert comma-separated to pipes
+    sed 's/,/|/g'
+
+41. Comment out matching lines
+    sed '/pattern/s/^/#/'
+
+42. Uncomment matching lines
+    sed '/^#/s/^#//'

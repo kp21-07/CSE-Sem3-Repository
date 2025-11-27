@@ -1,0 +1,251 @@
+===================
+test12: PASSED
+Given input
+i 11
+i 22
+i 33
+p -1
+s 22
+s 99
+d 11
+p -1
+r -1
+p -1
+q 0
+Got output: 
+33 22 11 
+True
+False
+Deleted
+33 22 
+22 33 
+===================
+
+===================
+test5: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+d 12
+p -1
+q 0
+Got output: 
+True
+Deleted
+21 19 14 
+===================
+
+===================
+test9: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+p -1
+r -1
+p -1
+d 14
+p -1
+d 19
+i 100
+p -1
+d 14
+p -1
+q 0
+Got output: 
+True
+21 19 14 12 
+12 14 19 21 
+Deleted
+12 19 21 
+Deleted
+100 12 21 
+Failed
+100 12 21 
+===================
+
+===================
+test7: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+d 14
+p -1
+d 19
+p -1
+q 0
+Got output: 
+True
+Deleted
+21 19 12 
+Deleted
+21 12 
+===================
+
+===================
+test2: PASSED
+Given input
+i 12
+i 13
+p -1
+q 0
+Got output: 
+13 12 
+===================
+
+===================
+test8: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+d 14
+p -1
+d 19
+i 100
+p -1
+d 14
+p -1
+q 0
+Got output: 
+True
+Deleted
+21 19 12 
+Deleted
+100 21 12 
+Failed
+100 21 12 
+===================
+
+===================
+test13: PASSED
+Given input
+p -1
+s 5
+d 10
+i 100
+d 100
+p -1
+r -1
+q 0
+Got output: 
+-1
+False
+Failed
+Deleted
+-1
+===================
+
+===================
+test11: PASSED
+Given input
+i 7
+p -1
+q 0
+Got output: 
+7 
+===================
+
+===================
+test6: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+d 14
+p -1
+q 0
+Got output: 
+True
+Deleted
+21 19 12 
+===================
+
+===================
+test1: PASSED
+Given input
+i 12
+p -1
+q 0
+Got output: 
+12 
+===================
+
+===================
+test10: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+p -1
+r -1
+p -1
+r -1
+d 14
+p -1
+d 19
+i 100
+p -1
+d 14
+p -1
+q 0
+Got output: 
+True
+21 19 14 12 
+12 14 19 21 
+Deleted
+21 19 12 
+Deleted
+100 21 12 
+Failed
+100 21 12 
+===================
+
+===================
+test4: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+s 14
+p -1
+q 0
+Got output: 
+True
+21 19 14 12 
+===================
+
+===================
+test3: PASSED
+Given input
+i 12
+i 14
+i 19
+i 21
+p -1
+q 0
+Got output: 
+21 19 14 12 
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 13
+TESTS_FAILED: 0
++++++++++++++++++++
+

@@ -1,0 +1,125 @@
+1. Show current date and time
+   date
+
+2. Show UTC time
+   date -u
+
+3. Custom format (YYYY-MM-DD)
+   date +"%Y-%m-%d"
+
+4. Custom time format
+   date +"%H:%M:%S"
+
+5. Show weekday and month name
+   date +"%A %B"
+
+6. Format with multiple fields
+   date +"%Y-%m-%d %H:%M:%S"
+
+7. Seconds since epoch
+   date +%s
+
+8. Convert epoch to human-readable
+   date -d @1700000000
+
+9. Convert readable date to epoch
+   date -d "2025-01-01" +%s
+
+10. Add days
+    date -d "5 days"
+
+11. Subtract days
+    date -d "10 days ago"
+
+12. Next Monday
+    date -d "next monday"
+
+13. Yesterday
+    date -d "yesterday"
+
+14. Tomorrow
+    date -d "tomorrow"
+
+15. Specific timestamp
+    date -d "2025-11-25 14:30"
+
+16. Interpret input date
+    date -d "20240115"
+
+17. Validate a date (exit status)
+    date -d "2024-02-30" >/dev/null 2>&1
+
+18. RFC 2822 format
+    date -R
+
+19. ISO 8601 format
+    date -I
+
+20. Custom separator
+    date +"%Y/%m/%d"
+
+21. Print week number
+    date +"%V"
+
+22. Print day of year
+    date +"%j"
+
+23. Print timezone
+    date +"%Z %z"
+
+24. Print only month number
+    date +"%m"
+
+25. Print only weekday (short)
+    date +"%a"
+
+26. Print only weekday (full)
+    date +"%A"
+
+27. Print only month name
+    date +"%B"
+
+28. Add hours
+    date -d "2 hours"
+
+29. Add minutes
+    date -d "15 minutes"
+
+30. Add seconds
+    date -d "45 seconds"
+
+31. Subtract hours
+    date -d "3 hours ago"
+
+32. Subtract months
+    date -d "2 months ago"
+
+33. Add month
+    date -d "1 month"
+
+34. Add year
+    date -d "1 year"
+
+35. Compare dates by converting to epoch
+    date -d "$d1" +%s
+
+36. Format for filenames
+    date +"%Y%m%d_%H%M%S"
+
+37. Custom literal text
+    date +"Today is %A"
+
+38. Print quarter (manual)
+    date +"Q$(( ( $(date +%m) - 1 ) / 3 + 1 ))"
+
+39. First day of this month
+    date -d "$(date +%Y-%m-01)"
+
+40. Last day of this month
+    date -d "$(date +%Y-%m-01) +1 month -1 day"
+
+41. Start of year
+    date -d "$(date +%Y)-01-01"
+
+42. End of year
+    date -d "$(date +%Y)-12-31"

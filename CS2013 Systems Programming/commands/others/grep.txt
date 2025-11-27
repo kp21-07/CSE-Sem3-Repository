@@ -1,0 +1,147 @@
+1. Basic search
+   grep "pattern" file
+
+2. Case-insensitive search
+   grep -i "pattern" file
+
+3. Recursive search
+   grep -r "pattern" directory/
+
+4. Count matching lines
+   grep -c "pattern" file
+
+5. Show line numbers
+   grep -n "pattern" file
+
+6. Show only matching part
+   grep -o "pattern" file
+
+7. Whole-word match
+   grep -w "word" file
+
+8. Whole-line match
+   grep -x "exact line" file
+
+9. Invert match
+   grep -v "pattern" file
+
+10. Match beginning of line
+    grep "^start" file
+
+11. Match end of line
+    grep "end$" file
+
+12. Match digits
+    grep "[0-9]+" file
+
+13. Extended regex
+    grep -E "foo|bar" file
+
+14. Multiple patterns
+    grep -e "foo" -e "bar" file
+
+15. List filenames with matches
+    grep -l "pattern" *.txt
+
+16. List filenames without matches
+    grep -L "pattern" *.txt
+
+17. Show byte offsets
+    grep -b "pattern" file
+
+18. Ignore binary files
+    grep -I "text" *
+
+19. Search only in .c files
+    grep "main" *.c
+
+20. 3 lines before match
+    grep -B 3 "error" file
+
+21. 3 lines after match
+    grep -A 3 "error" file
+
+22. 3 lines before and after
+    grep -C 3 "error" file
+
+23. Quiet mode
+    grep -q "pattern" file
+
+24. Color matches
+    grep --color=always "pattern" file
+
+25. Match both patterns (AND)
+    grep "foo" file | grep "bar"
+
+26. Context with line numbers
+    grep -nC 2 "pattern" file
+
+27. Perl regex
+    grep -P "\d{3}-\d{2}-\d{4}" file
+
+28. Extract emails
+    grep -E -o "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}" file
+
+29. Extract IP addresses
+    grep -E -o "([0-9]{1,3}.){3}[0-9]{1,3}" file
+
+30. Count non-empty lines
+    grep -cve "^$" file
+
+31. Match blank lines
+    grep "^$" file
+
+32. Match non-blank lines
+    grep -v "^$" file
+
+33. Literal match (no regex)
+    grep -F "foo.bar" file
+
+34. Search inside .gz
+    zgrep "pattern" file.gz
+
+35. Match pattern in first field
+    cut -d' ' -f1 file | grep "pattern"
+
+36. Highlight multiple patterns
+    grep --color=always -E "foo|bar" file
+
+37. Count occurrences of a word
+    grep -o "word" file | wc -l
+
+38. Match exactly 4 characters
+    grep "^....$" file
+
+39. Only alphabetic lines
+    grep "^[A-Za-z]*$" file
+
+40. Match hex numbers
+    grep -E "\b[0-9A-Fa-f]+\b" file
+
+41. Print filename with match
+    grep -H "pattern" file
+
+42. Pipe input
+    ls -l | grep "^d"
+
+- Filtering lines
+- Pattern matching
+- Regular expression searches
+- Searching across files/directories
+- Counting and locating matches
+
+| Flag       | Meaning                      |
+| ---------- | ---------------------------- |
+| `-i`       | ignore case                  |
+| `-r`       | recursive                    |
+| `-n`       | line numbers                 |
+| `-v`       | invert match                 |
+| `-c`       | count                        |
+| `-l`       | list filenames with match    |
+| `-L`       | list filenames without match |
+| `-w`       | whole word                   |
+| `-x`       | whole line                   |
+| `-o`       | only matching part           |
+| `-E`       | extended regex               |
+| `-q`       | quiet                        |
+| `-B/A/C N` | context lines                |

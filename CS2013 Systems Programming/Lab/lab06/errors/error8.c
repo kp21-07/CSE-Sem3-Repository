@@ -1,0 +1,10 @@
+// Correct the errors in the following C program. The program should print numbers 1 to 5.
+#include<stdio.h>
+int main()
+{
+	int i = 1;
+	do{
+		printf("%d\n", i++);
+	} while (i <= 5);
+	return 0;
+}

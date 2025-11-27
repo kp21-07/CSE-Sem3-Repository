@@ -1,0 +1,132 @@
+1. Cut by character position
+   cut -c1 file
+   cut -c1-5 file
+   cut -c3,7 file
+   cut -c2-4,10 file
+
+2. Cut by deleting selected character positions
+   cut -c1,4,9 --complement file
+
+3. Cut by byte position
+   cut -b1-10 file
+
+4. Cut by field (default delimiter: tab)
+   cut -f1 file
+   cut -f1,3 file
+
+5. Use custom delimiter (comma, colon, space)
+   cut -d',' -f2 file
+   cut -d':' -f1 file
+   cut -d' ' -f1-3 file
+
+6. Cut with multiple delimiters (using tr first)
+   tr '[:,:]' ' ' < file | cut -d' ' -f2
+
+7. Print from specific field to end
+   cut -d',' -f3- file
+
+8. Print fields except selected ones (indirect)
+   cut -d',' -f1,3 --complement file
+
+9. Cut with negative positions (GNU only)
+   cut -c -3 file    (first 3 chars)
+   cut -c 3- file     (from 3rd char to end)
+
+10. Extract substring-like ranges
+    cut -c5-10 file
+
+11. Cut command combined with grep
+    cut -d' ' -f1 file | grep "pattern"
+
+12. Cut command combined with sort
+    cut -d',' -f2 file | sort
+
+13. Extract username from /etc/passwd
+    cut -d':' -f1 /etc/passwd
+
+14. Extract shell from /etc/passwd
+    cut -d':' -f7 /etc/passwd
+
+15. Extract multiple non-consecutive fields
+    cut -d',' -f1,4,6 file
+
+16. Extract CSV columns
+    cut -d',' -f2 file.csv
+
+17. Keep only first N columns
+    cut -d',' -f1-4 file.csv
+
+18. Cut with no newline issues
+    cut -d',' -f1 < file
+
+19. Combine cut + uniq + sort
+    cut -d',' -f1 file | sort | uniq
+
+20. Extract fixed-width data columns
+    cut -c1-4,10-12 file
+
+21. Extract everything except first 2 fields
+    cut -d' ' -f3- file
+
+22. Extract everything except first 5 characters
+    cut -c6- file
+
+23. Extract only the last character (GNU)
+    cut -c -1 file
+
+24. Extract middle portion
+    cut -c4-8 file
+
+25. Cut from stdin (default)
+    echo "hello world" | cut -d' ' -f2
+
+26. Cut from pipe with delimiter
+    ls -l | cut -d' ' -f1,3,9
+
+27. Cut space-delimited with multiple spaces (use tr)
+    ls -l | tr -s ' ' | cut -d' ' -f3
+
+28. Extract fields ignoring repeated delimiters
+    tr -s ':' < file | cut -d':' -f2
+
+29. Cut Excel-like TSV files
+    cut -f3 file.tsv
+
+30. Extract last field of CSV (use rev twice trick)
+    rev file | cut -d',' -f1 | rev
+
+31. Extract first word of each line
+    cut -d' ' -f1 file
+
+32. Extract second word of each line
+    cut -d' ' -f2 file
+
+33. Combine cut with awk
+    cut -d',' -f1 | awk '{sum += $1} END{print sum}'
+
+34. Extract fixed columns from log
+    cut -c1-20 logfile
+
+35. Extract date part from timestamp
+    cut -d'T' -f1 file
+
+36. Extract time part from timestamp
+    cut -d'T' -f2 file
+
+37. Keep only alphabetic characters
+    tr -cd 'A-Za-z\n' < file
+
+38. Extract extension from filenames
+    echo "file.txt" | cut -d'.' -f2
+
+39. Extract filename without extension
+    echo "file.txt" | cut -d'.' -f1
+
+40. Extract domain from email
+    echo "[a@b.com](mailto:a@b.com)" | cut -d'@' -f2
+
+41. Extract username from email
+    echo "[a@b.com](mailto:a@b.com)" | cut -d'@' -f1
+
+42. Combine cut with paste
+    cut -d',' -f1 file | paste -d',' - otherfile

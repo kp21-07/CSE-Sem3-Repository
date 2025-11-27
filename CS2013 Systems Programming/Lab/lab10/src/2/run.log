@@ -1,0 +1,161 @@
+===================
+test5: PASSED
+Given input
+u 12
+o -1
+o -1
+o -1
+u 14
+u 12
+o -1
+q 0
+Got output: 
+12
+Stack empty
+Stack empty
+12
+===================
+
+===================
+test9: PASSED
+Given input
+u 20
+u 8
+u 9
+o -1
+u 100
+h -1
+o -1
+q 0
+Got output: 
+9
+100
+100
+===================
+
+===================
+test7: PASSED
+Given input
+u 20
+u 15
+u 25
+o -1
+h -1
+o -1
+o -1
+q 0
+Got output: 
+25
+15
+15
+20
+===================
+
+===================
+test2: PASSED
+Given input
+u 12
+u 13
+o -1
+o -1
+q 0
+Got output: 
+13
+12
+===================
+
+===================
+test8: PASSED
+Given input
+o -1
+u 30
+o -1
+o -1
+h -1
+q 0
+Got output: 
+Stack empty
+30
+Stack empty
+Stack empty
+===================
+
+===================
+test6: PASSED
+Given input
+u 5
+u 10
+h -1
+o -1
+o -1
+q 0
+Got output: 
+10
+10
+5
+===================
+
+===================
+test1: PASSED
+Given input
+u 12
+o -1
+q 0
+Got output: 
+12
+===================
+
+===================
+test10: PASSED
+Given input
+u 1000
+h -1
+o -1
+o -1
+h -1
+u 90
+h -1
+q 0
+Got output: 
+1000
+1000
+Stack empty
+Stack empty
+90
+===================
+
+===================
+test4: PASSED
+Given input
+u 12
+u 14
+u 19
+h -1
+u 14
+o -1
+q 0
+Got output: 
+19
+14
+===================
+
+===================
+test3: PASSED
+Given input
+u 12
+u 14
+u 19
+o -1
+o -1
+q 0
+Got output: 
+19
+14
+===================
+
+
++++++++++++++++++++
+TESTS_PASSED: 10
+TESTS_FAILED: 0
++++++++++++++++++++
+

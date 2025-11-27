@@ -1,0 +1,50 @@
+1. echo – print text
+   echo "hello"
+
+2. printf – formatted printing
+   printf "%s %d\n" "age" 20
+
+3. read – read input
+   read x
+   read -p "Enter: " name
+   read -r line
+
+4. cd – change directory
+   cd /path
+   cd ..
+
+5. pwd – print working directory
+   pwd
+
+6. type – check if command is builtin or external
+   type cd
+   type ls
+
+7. exit – exit script
+    exit
+    exit 1
+
+8. return – exit a function
+    return 0
+    return 1
+
+9. eval – evaluate a string as command
+    eval "ls -l"
+
+10. source (.) – load script in current shell
+    source file.sh
+    . file.sh
+
+11. test / [ ] – condition builtin
+    [ $x -gt 5 ]
+    test -f file
+
+12. [[ ]] – advanced test
+    [[ $x == "hi" ]]
+    [[ $a -gt 5 && $b -lt 10 ]]
+
+13. bg – resume background job
+    bg %1
+
+14. fg – bring job to foreground
+    fg %1
