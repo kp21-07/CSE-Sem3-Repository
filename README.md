@@ -1,6 +1,9 @@
 # CSE-Sem3-Repository
 
-Academic Repository for my 3rd Semester of Computer Science & Engineering - B24 (Aug - Dec '25)
+_To the lucky sod who stumbled upon this repository—welcome.
+May your git pull be clean, your proofs be short, and your pointers never segfault._
+
+Academic Repository for my 3rd Semester of Computer Science & Engineering – B24 (Aug–Dec ’25)
 
 ---
 
@@ -15,4 +18,7 @@ Academic Repository for my 3rd Semester of Computer Science & Engineering - B24 
 
 ---
 
-This repository contains course materials, assignments, notes, and resources for the listed subjects as part of my third semester curriculum.
+This repository contains course materials, assignments, notes, and various academic artifacts from my third semester.
+Expect a mix of code, maths, scribbles, late-night problem sets, and the occasional existential crisis disguised as a .md file.
+
+Good Luck! ;)
